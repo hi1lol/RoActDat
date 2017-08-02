@@ -10,7 +10,7 @@
 
 #include <taihen.h>
 
-#define MOUNT_POINT_ID 0x800
+#define MOUNT_POINT_ID 0x500
 
 void _start() __attribute__ ((weak, alias("module_start")));
 int module_start(SceSize args, void *argp) {
