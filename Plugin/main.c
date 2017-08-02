@@ -14,7 +14,7 @@
 
 void _start() __attribute__ ((weak, alias("module_start")));
 int module_start(SceSize args, void *argp) {
-	ksceIoUmount(0x500, 0, 0, 0);
+    ksceIoUmount(0x500, 0, 0, 0);
     ksceIoMount(0x500,NULL, 1, 0, 0, 0);
 
 	return SCE_KERNEL_START_SUCCESS;
